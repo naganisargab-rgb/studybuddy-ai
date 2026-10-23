@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a class="logo" href="/">StudyBuddy <span>AI</span></a>
+        <span class="tag">YOUR PERSONAL AI TUTOR</span>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <p class="eyebrow">LEARN SMARTER, EVERY DAY ✨</p>
+            <h1>Make learning<br><span>feel easier.</span></h1>
+            <p class="subtitle">
+                Understand difficult topics, create study notes,
+                and prepare for exams with your AI study buddy.
+            </p>
+        </section>
+
+        <section class="study-card">
+            <label for="topic">What would you like to learn today?</label>
+            <textarea id="topic" rows="5"
+                placeholder="Example: Explain linked lists in simple words..."></textarea>
+
+            <button id="explainBtn">Explain my topic ✨</button>
+            <p id="status" role="status"></p>
+        </section>
+
+        <section class="features">
+            <article class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Smart Notes</h3>
+                <p>Turn complex topics into simple notes.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>AI Tutor</h3>
+                <p>Learn concepts one step at a time.</p>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon">✍️</div>
+                <h3>Practice Quiz</h3>
+                <p>Test what you have learned.</p>
+            </article>
+        </section>
+
+        <section id="result" class="result-card" hidden>
+            <h2>Your explanation 💜</h2>
+            <div id="answer"></div>
+        </section>
+    </main>
+
+    <footer>Made for students, with StudyBuddy AI 💜</footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
